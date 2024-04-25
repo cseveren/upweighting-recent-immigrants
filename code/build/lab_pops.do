@@ -1,0 +1,43 @@
+*use <mo> when summing immigration in a month, use <yr> when summing by year of imm
+capture label var awt0_m "No Interp. (mo)"
+capture label var awt0_y "No Interp. (yr)"
+capture label var awtB_m "Baseline Interp. B (mo)"
+capture label var awtB_y "Baseline Interp. B (yr)"
+capture label var awt1_m "Delayed Take-Up (mo)"
+capture label var awt1_y "Delayed Take-Up (yr)"
+capture label var awt2_m "Extrap. Delayed (mo)"
+capture label var awt2_y "Extrap. Delayed (yr)"
+capture label var awt3_m "Excess Nonresp. (mo)"
+capture label var awt3_y "Excess Nonresp. (yr)"
+capture label var awt4_m "Delayed+Excess (mo)"
+capture label var awt4_y "Delayed+Excess (yr)"
+
+
+capture label var pop0_m "No Interp. (mo)"
+capture label var pop0_y "No Interp. (yr)"
+capture label var popB_m "Baseline Interp. B (mo)"
+capture label var popB_y "Baseline Interp. B (yr)"
+capture label var pop1_m "Delayed Take-Up (mo)"
+capture label var pop1_y "Delayed Take-Up (yr)"
+capture label var pop2_m "Extrap. Delayed (mo)"
+capture label var pop2_y "Extrap. Delayed (yr)"
+capture label var pop3_m "Excess Nonresp. (mo)"
+capture label var pop3_y "Excess Nonresp. (yr)"
+capture label var pop4_m "Delayed+Excess (mo)"
+capture label var pop4_y "Delayed+Excess (yr)"
+
+capture label var underreport1 "Delayed Take-Up"
+capture label var underreport2 "Extrap. Delayed"
+capture label var underreport3 "Excess Nonresp."
+
+capture label var diff1 "Delayed Take-Up"
+capture label var diff2 "Extrap. Delayed"
+capture label var diff3 "Excess Nonresp."
+
+capture label var diffgrow_emp_awt1_m_sa "Delayed Take-Up"
+capture label var diffgrow_emp_awt2_m_sa "Extrap. Delayed"
+capture label var diffgrow_emp_awt3_m_sa "Excess Nonresp."
+
+capture label var diffgrow_emp_awt1_m_sa_ma "Delayed Take-Up"
+capture label var diffgrow_emp_awt2_m_sa_ma "Extrap. Delayed"
+capture label var diffgrow_emp_awt3_m_sa_ma "Excess Nonresp."
