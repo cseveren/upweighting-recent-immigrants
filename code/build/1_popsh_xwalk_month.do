@@ -59,7 +59,7 @@ twoway (line pop0_m monthlag if yrimmig_est==`yr' & monthlag<=240) || ///
 	xtitle("Months Since Start of `yr'") ytitle("Pop. of `yr' Cohort in CPS (000s)") ///
 	yline(0.0, lc(gs11)) xline(12, lc(gs14) lp(solid) noextend) 
 	
-graph export $git/results/cohest_popm_`yr'.png, replace	
+graph export $git/results/cohest_popm_`yr'.png, replace
 }
 
 ** Experimentation Zone
@@ -163,6 +163,7 @@ twoway (line adj0 monthlag if monthlag<=240) || ///
 	yline(1.0, lc(gs11)) xline(12, lc(gs14) lp(solid) noextend) yline(1.0, lc(gs11)) xline(120, lc(gs14) lp(dashdot) noextend)
 
 graph export $git/results/cohest_shrm_ave.png, replace	
+graph export $git/results/cohest_shrm_ave.pdf, replace	
 
 
 // twoway (line shpop0 monthlag if monthlag<=12) || ///
