@@ -22,6 +22,7 @@ twoway (line popB_y yrimmig_est ) ///
 		legend(pos(6) row(2)) xtitle("Year of Immigration") ytitle("Immigrants here <1 year") ///
 		ylab(, nogrid) xlab(, nogrid)
 
+graph export $git/results/cohest_adj_y0.pdf, replace	
 graph export $git/results/cohest_adj_y0.png, replace	
 	
 ** Immigrants here 0-1 years
@@ -64,10 +65,10 @@ twoway (line popB_y yrimmig_est if yrimmig_est<=2023) ///
 		(scatter CBO_net_immig yrimmig_est, ms(vlarge) mc(green)), ///
 		legend(pos(6) row(2)) xtitle("Year of Immigration") ytitle("Immigrants here <2 years") ///
 		ylab(, nogrid) xlab(, nogrid)		
-		
+
+graph export $git/results/cohest_adj_y01.pdf, replace	
 graph export $git/results/cohest_adj_y01.png, replace	
 			
-		
 		
 * Cumulative Flow, Monthly	// Excluded from draft
 
@@ -106,6 +107,7 @@ twoway  (line popB_m yrmo) ///
 		legend(pos(6) row(2)) ///
 		xtitle("") ytitle("Cumulative Immigration since 2020") 
 		
+graph export $git/results/cohest_adj_post2020.pdf, replace	
 graph export $git/results/cohest_adj_post2020.png, replace	
 		
 ** Under-reporting
@@ -129,5 +131,6 @@ twoway  (line underreport1 yrmo, lc(stc2)) ///
 		legend(pos(6) row(1)) xtitle("") ytitle("Estimated CPS Underreporting of Immigrants" "(relative to Baseline Interp. B)") ///
 		ylab(, nogrid) xlab(, nogrid) yline(0)	
 
+graph export $git/results/misreport.pdf, replace	
 graph export $git/results/misreport.png, replace	
 clear		

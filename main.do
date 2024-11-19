@@ -37,8 +37,8 @@ do ${git}/code/build/0_prep_cbo.do
 
 
 ** Checking Population Preps/Making Adjustments
-do ${git}/code/build/1_popsh_xwalk_month.do
-do ${git}/code/build/1_make_delayadj.do
+do ${git}/code/build/1_popsh_xwalk_month.do		// Figures 1 and 2
+do ${git}/code/build/1_make_delayadj.do			
 do ${git}/code/build/1_popsh_acs.do				// Figure A1
 
 do ${git}/code/build/9_adjust_cps.do // calls lab_pops.do

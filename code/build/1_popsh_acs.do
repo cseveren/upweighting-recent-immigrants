@@ -16,7 +16,8 @@ line shpop time_in_US, legend(off) ///
 	xtitle("Years Since Start of Year of Immigration") ytitle("Ave. Share of Max Cohort Pop.") ///
 	title("Share of Maximum Cohort Population in ACS '00-'19", si(medsmall)) ///
 	yline(1.0, lc(gs11))
-
+	
+graph export $git/results/cohest_acs_ave.pdf, replace	
 graph export $git/results/cohest_acs_ave.png, replace	
 
 clear

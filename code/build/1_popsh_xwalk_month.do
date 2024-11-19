@@ -59,6 +59,7 @@ twoway (line pop0_m monthlag if yrimmig_est==`yr' & monthlag<=240) || ///
 	xtitle("Months Since Start of `yr'") ytitle("Pop. of `yr' Cohort in CPS (000s)") ///
 	yline(0.0, lc(gs11)) xline(12, lc(gs14) lp(solid) noextend) 
 	
+graph export $git/results/cohest_popm_`yr'.pdf, replace
 graph export $git/results/cohest_popm_`yr'.png, replace
 }
 

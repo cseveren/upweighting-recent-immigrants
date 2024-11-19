@@ -37,6 +37,7 @@ twoway  (scatter `var' year if time_in_US==0 & yrimmig_est<2020, mc(`col1'%60)) 
 		(line `var' year if yrimmig_est==2023, lc(`col3')), ///
 		legend(off) ylab(, nogrid) xlab(, nogrid) xtitle("Year")
 	
+graph export $git/results/check_`var'.pdf, replace	
 graph export $git/results/check_`var'.png, replace	
 }		
 

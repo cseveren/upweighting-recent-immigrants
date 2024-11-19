@@ -130,11 +130,13 @@ tsline diffgrow_emp_awt1_m_sa diffgrow_emp_awt2_m_sa diffgrow_emp_awt3_m_sa if y
 	legend(row(1)) ylab(, nogrid) xlab(, nogrid) yline(0.0) ///
 	ytitle("Adjustment to Household Survey Job Growth" "(thousands of jobs)") xtitle("") lc(stc2 stc3 stc4)
 
+graph export $git/results/cesframe_growthadj.pdf, replace	
 graph export $git/results/cesframe_growthadj.png, replace	
 	
 tsline diffgrow_emp_awt1_m_sa_ma diffgrow_emp_awt2_m_sa_ma diffgrow_emp_awt3_m_sa_ma if yrmo>tm(1995m1), ///
 	legend(row(1)) ylab(, nogrid) xlab(, nogrid) yline(0.0) ///
 	ytitle("Adjustment to Household Survey Job Growth" "(12-month moving average, thousands of jobs)") xtitle("") lc(stc2 stc3 stc4)
 
+graph export $git/results/cesframe_growthadjMA.pdf, replace	
 graph export $git/results/cesframe_growthadjMA.png, replace		
 	

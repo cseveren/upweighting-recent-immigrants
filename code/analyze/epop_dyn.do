@@ -38,11 +38,9 @@ twoway (line r_epop_awt1_m monthlag), ///
 		text(0.59 300 "Native-born Emp/Pop (16+)") ///
 		text(0.695 75 "Foriegn-born Emp/Pop (16+)", color(midblue))
 
+graph export "$git/results/emppop_timeinUSm.pdf", replace	
 graph export "$git/results/emppop_timeinUSm.png", replace	
-//
-// keep time_in_US monthlag r_epop_*
-//
-// save "$dta/final/epop_timeinUSm.dta", replace
+
 
 clear
 

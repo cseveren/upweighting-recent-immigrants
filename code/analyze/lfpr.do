@@ -41,4 +41,5 @@ do "$git/code/build/lab_pops.do"
 tsline diff*, legend(row(1)) ylab(, nogrid) xlab(, nogrid) yline(0.0) ///
 	ytitle("Adjustment to Headline LFPR") xtitle("") lc(stc2 stc3 stc4)
 	
+graph export $git/results/alt_lfpr.pdf, replace	
 graph export $git/results/alt_lfpr.png, replace	
