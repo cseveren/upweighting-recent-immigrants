@@ -46,7 +46,7 @@ tab time_in_US year [aw=awtC]
 
 ### Inputs Provided in Repo
 
-The repo includes `$git/inputs/crosswalk_to_year.xlsx`, which is the crosswalk referenced in the Research Brief. Importantly, this **MUST BE** updated to add additional years if data from 2025 or later is used. You should feel free to do so. 
+The repo includes `$git/inputs/crosswalk_to_year.xlsx`, which is the crosswalk referenced in the Research Brief. *Importantly, this* **MUST BE** *updated to add additional years if data from 2025 or later is used, or if IPUMS alters the coding of its year of immigration variable* (`YRIMMIG`). You should feel free to do so. 
 
 ### Inputs from Other Sources
 
