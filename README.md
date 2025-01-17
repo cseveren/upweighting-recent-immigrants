@@ -1,7 +1,7 @@
 # Upweighting Recent Immigrants in the CPS
 Project to provide a weighting scheme to upweight just-arrived and recent immigrants in the CPS to better reflect contemporaneous immigration levels.
 
-Research Brief published here XXXX.
+The Research Brief can be found [here](https://www.philadelphiafed.org/the-economy/macroeconomics/delayed-sampling-of-recent-immigrants-in-the-current-population-survey), with DOI [https://doi.org/10.21799/frbp.rb.2025.jan.31](https://doi.org/10.21799/frbp.rb.2025.jan.31).
 
 ## Structure
 This repo provides code and crosswalks intended to recreate the Research Brief. The code, detailed below, is written as a collection of Stata do files called from a primary script, `main.do`. The primary data using for the project are too large to post in this repo, but are readily available from [IPUMS](https://www.ipums.org/). See details in [Data](#data) below.
